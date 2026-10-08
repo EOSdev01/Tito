@@ -1,6 +1,6 @@
 // Service worker de pun.Tito
 // Si cambiás archivos de la app, subí el número de versión para forzar la actualización.
-var VERSION = 'pun-tito-v1';
+var VERSION = 'pun-tito-v2';
 var ARCHIVOS = [
   './',
   'index.html',
