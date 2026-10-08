@@ -179,7 +179,7 @@ textarea{font:inherit;font-size:17px;color:var(--ink);background:none;border:0;b
   var backTo=null;
   var P=['v0','v1','v2','v2b','v3'];
   function show(n){step=n;view(P[n],n,n?4:0,(n>=1&&n<=3)?function(){show(n-1)}:null)}
-  function showO(k){view(ALL[3+k],k<3?k:0,k<3?3:0,k===3?function(){show(0)}:k===2?function(){showO(1)}:function(){show(0)})}
+  function showO(k){view(['o1','o2','o3'][k-1],k<3?k:0,k<3?3:0,k===3?function(){show(0)}:k===2?function(){showO(1)}:function(){show(0)})}
   function parse(t){
     t=String(t).replace(/[\s$]/g,'');
     if(!t)return NaN;
